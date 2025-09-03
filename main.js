@@ -1,4 +1,4 @@
-const imagens= ["imgs/sistemas-agroflorestais.jpg","imgs/sistemas-agroflorestais22.jpeg","imgs/"];
+const imagens= ["imgs/sistemas-agroflorestais.jpg","imgs/sistemas-agroflorestais22.jpeg","imgs/2021115_00_sistema_agroflorestal.jpg","imgs/agrofloresta.jpg","imgs/sistema-agroflorestal.jpg","imgs/mm.jpg","imgs/flore.png"];
 let botaoMenos = document.getElementById('menosfoto');
 let botaoMais = document.getElementById('maisfoto');
 let imagemP = document.getElementById('fotoPrincipal');
@@ -25,3 +25,8 @@ botaoMais.addEventListener('click',()=>{
     }
     return posi;
 })
+
+function fixedMenu(){
+
+}
+document.addEventListener('click', fixedMenu);

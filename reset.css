@@ -5,6 +5,7 @@
     list-style: none;
     box-sizing: border-box;
     font-size: 10px;
+    font-family:"Roboto", sans-serif;;
 }
 
 img{
@@ -12,4 +13,8 @@ img{
 }
 a{
     display: block;
+}
+
+body{
+    overflow-x: hidden;
 }

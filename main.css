@@ -27,7 +27,7 @@ header{
 }
 #headerMenu a{
     font-weight: 500;
-    color:black;
+    color:rgb(255, 255, 255);
     
 }
 
@@ -49,10 +49,204 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin:7.5rem 0;
 }
 #fotoPrincipal{
     width: 60rem;
     height: 40rem;
     border-radius: 15px;
     overflow: hidden;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45rem;
+    gap: 40px;
+    padding-top: 2.5rem;
+}
+.partelistafoto{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 90rem;
+}
+.partelistafoto ul li{
+    font-size: 2.1rem;
+    text-align:left;
+    list-style: url(imgs/sprout.svg);
+}
+
+.partelistafoto ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.partelistafoto img{
+    width: 43rem;
+    height: 26rem;
+    border-radius: 15px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding-top: 2.0rem;
+}
+
+.card{
+    border: 3px solid black;
+    width: 25rem;
+    height: 23rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.card h1{
+    margin-bottom: 0.5rem;
+    font-size: 2.9rem;
+}
+
+.card img{
+    align-self: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 15px;
+    margin-bottom: 0.2rem;
+}
+.card p{
+    font-size: 1.8rem;
+}
+
+.card.maior{
+    width: 30rem;
+    height: 23rem;
+}
+.conteudo.verde .cards .card{
+    border: 0.3rem solid white;
+}
+.conteudo.verde{
+    background-color: rgb(61, 145, 98);
+    color: white;
+}
+.conteudo.branco{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.menuFixo{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+footer{
+    height: 7rem;
+    background-color: rgb(52, 88, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.conteudo.conteudo.verde .partelistafoto ul li{
+    list-style: url(imgs/sproutBra.svg);
+}
+@media (max-width: 848px) {
+    *{
+        font-size: 8px;
+    }
+    .cards{
+        gap: 15px;
+        
+    }
+    .conteudo .cards{
+        height: 200rem;
+    }
+    .card{
+        width: 20rem;
+        height: 20rem;
+        
+    }
+    .card.maior{
+        width: 20rem;
+        height: 20rem;
+    }
+    .card h1{
+        font-size: 2.2rem;
+    }
+    .card p{
+        font-size: 1.3rem;
+    } 
+    .partelistafoto img{
+        width: 30rem;
+        height: 20rem;
+    }
+    .partelistafoto ul li{
+        width: 35rem;
+        list-style: none;
+        font-size: 1.8rem;
+    }
+    .conteudo.conteudo.verde .partelistafoto ul li{
+        width: 35rem;
+        list-style: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    *{
+        font-size: 6.5px;
+    }
+    header{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 10px;
+        gap: 10px;
+    }
+    #headerMenu{
+        padding-right: 0px;
+        gap:15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #fotoPrincipal{
+        width: 40rem;
+        height: 30rem;
+    }
+    .partelistafoto{
+        flex-direction: column;
+        gap: 20px;
+        width: 35rem;
+    }
+    .conteudo{
+        height: 100rem;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .conteudo .cards{
+        height: 150rem;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .partelistafoto img{
+        width: 30rem;
+        height: 20rem;
+    }
+    .partelistafoto ul li{
+        width: 30rem;
+        list-style: none;
+        font-size: 1.5rem;
+    }
+    .conteudo.conteudo.verde .partelistafoto ul li{
+        width: 30rem;
+        list-style: none;
+    }
+    
 }
