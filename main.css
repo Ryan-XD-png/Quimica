@@ -5,6 +5,7 @@ header{
     background-color: rgb(61, 145, 98);
     display: flex;
     justify-content: space-between;
+    position: relative;
 
 }
 
@@ -69,6 +70,7 @@ header{
 .partelistafoto{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 50px;
     width: 90rem;
 }
@@ -203,17 +205,21 @@ footer{
     *{
         font-size: 6.5px;
     }
+    
     header{
-        flex-direction: column;
         height: auto;
         padding-bottom: 10px;
         gap: 10px;
     }
-    #headerMenu{
-        padding-right: 0px;
-        gap:15px;
-        flex-wrap: wrap;
-        justify-content: center;
+    .botaoMenu{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 28px;
+        height: 28px;
+        background-image: url(imgs/menu.svg);
+        background-size: cover;
+        cursor: pointer;
     }
 
     #fotoPrincipal{
@@ -226,8 +232,10 @@ footer{
         width: 35rem;
     }
     .conteudo{
-        height: 100rem;
+        padding: 10rem  0;
+        height: 70rem;
         flex-direction: column;
+        justify-content: center;
         gap: 20px;
     }
     .conteudo .cards{
@@ -248,5 +256,7 @@ footer{
         width: 30rem;
         list-style: none;
     }
-    
+    .conteudo.alto{
+        height: 110rem;
+    }
 }
