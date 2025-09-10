@@ -211,6 +211,9 @@ footer{
         padding-bottom: 10px;
         gap: 10px;
     }
+    #headerMenu{
+        display: none;
+    }
     .botaoMenu{
         position: absolute;
         top: 10px;

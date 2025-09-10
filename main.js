@@ -38,6 +38,14 @@ let icone = document.getElementById('icone');
 let fundo = document.getElementById('fundo');
 const textMenu = ["Introdução","Tecnologias","Automação"];
 
+function saida() {
+    menu.style.display = 'none';
+    header.style.display = 'none';
+    botaoMenu.style.display = 'block';
+    aberto = false;
+    fundo.style.display = 'none';    
+    
+}
 
 if(window.innerWidth <= 480){
     
@@ -48,12 +56,13 @@ if(window.innerWidth <= 480){
         link.textContent = textMenu[index];
         link.style.color = 'white';
         link.style.fontSize = '25px';
-        link.style.textDecoration = 'none';
+        link.style.textDecoration ='none';
         link.style.fontWeight = 'bold';
         link.style.listStyle = 'none';
         link.style.margin = '0';
         link.style.padding = '0';
         link.style.cursor = 'pointer';
+        link.addEventListener('click',saida);
         },);
         fundo.style.position = 'fixed';
         fundo.style.display = 'block';
@@ -85,16 +94,10 @@ if(window.innerWidth <= 480){
         menu.style.right = '0';
         menu.style.borderRadius = '10px 0 0 10px';
         menu.style.backgroundColor = '#004225';
-        menu.style.width = '60vw';
-        menu.style.height = '75vh';
+        menu.style.width = '200px';
+        menu.style.height = '250px';
         menu.style.zIndex = '100';
     });
 
 }
-sair.addEventListener('click',()=>{
-    menu.style.display = 'none';
-    header.style.display = 'none';
-    botaoMenu.style.display = 'block';
-    aberto = false;
-    fundo.style.display = 'none';
-});
+sair.addEventListener('click',saida);
